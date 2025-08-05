@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guadalajara Oculta</title>
+  <title>Xalisco Oculto</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Spectral:ital@1&display=swap" rel="stylesheet">
   <style>
-    /* Fondo animado de niebla */
     body {
       margin: 0;
       background: url('https://i.imgur.com/1ZQZ1Zy.png') repeat;
@@ -20,52 +19,43 @@
       100% { background-position: 1000px 0; }
     }
 
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-      background-color: rgba(0, 0, 0, 0.8);
-      border-bottom: 1px solid #333;
+    header, section {
+      padding: 2rem;
+      background-color: rgba(10, 10, 10, 0.85);
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #330019;
     }
 
-    header h1 {
-      font-family: 'Cinzel Decorative', serif;
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: url('https://i.imgur.com/1ZQZ1Zy.png') center/cover no-repeat;
+      color: #fff;
+    }
+
+    .hero h2 {
       font-size: 3rem;
+      font-family: 'Cinzel Decorative', serif;
       color: #b30059;
       text-shadow: 0 0 10px #660033;
     }
 
-    header p {
+    .hero p {
       font-style: italic;
       font-size: 1.3rem;
-      color: #aaa;
-      animation: fadeIn 3s ease-in;
+      margin-bottom: 2rem;
     }
 
-    section {
-      padding: 2rem;
-      background-color: rgba(10, 10, 10, 0.85);
-      margin: 2rem auto;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #330019;
-      transition: transform 0.3s ease;
-    }
-
-    section:hover {
-      transform: scale(1.02);
-    }
-
-    section h2 {
+    h1, h2 {
       font-family: 'Cinzel Decorative', serif;
       color: #e60073;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
     }
 
-    section p {
+    p {
       font-style: italic;
       margin-bottom: 1rem;
-      animation: fadeIn 2s ease-in;
     }
 
     iframe {
@@ -78,7 +68,7 @@
 
     .contact-button {
       display: block;
-      margin: 3rem auto;
+      margin: 2rem auto;
       padding: 1rem 2rem;
       background-color: #660033;
       color: #fff;
@@ -88,6 +78,8 @@
       font-family: 'Cinzel Decorative', serif;
       box-shadow: 0 0 10px #99004d;
       transition: background-color 0.3s ease;
+      text-align: center;
+      max-width: 300px;
     }
 
     .contact-button:hover {
@@ -111,14 +103,15 @@
     .social-icons img:hover {
       filter: grayscale(0%) brightness(1.2);
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
   </style>
 </head>
 <body>
+
+  <div class="hero">
+    <h2>Xalisco Oculto</h2>
+    <p>Donde la niebla revela lo que el sol oculta</p>
+    <a class="contact-button" href="https://wa.me/5213312345678" target="_blank">Reserva tu experiencia</a>
+  </div>
 
   <header>
     <h1>Guadalajara Oculta</h1>
@@ -149,13 +142,17 @@
     <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
   </section>
 
-  <a class="contact-button" href="https://wa.me/52XXXXXXXXXX" target="_blank">Reserva tu experiencia</a>
+  <section>
+    <h2>Reservaciones</h2>
+    <p>Selecciona tu fecha ideal para explorar Xalisco Oculto.</p>
+    <iframe src="https://calendar.google.com/calendar/embed?src=TU_CALENDARIO_PUBLICO&ctz=America%2FMexico_City" style="border: 0;" frameborder="0" scrolling="no"></iframe>
+  </section>
 
   <footer>
     <div class="social-icons">
-      <a href="https://instagram.com"><img src="https://i.imgur.com/1xXfZlK.png" alt="Instagram"></a>
-      <a href="https://tiktok.com"><img src="https://i.imgur.com/2ZcYw7v.png" alt="TikTok"></a>
-      <a href="https://youtube.com"><img src="https://i.imgur.com/3VZz5gJ.png" alt="YouTube"></a>
+      <a href="https://instagram.com"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="https://tiktok.com"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok"></a>
+      <a href="https://youtube.com"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
     </div>
     <p>&copy; 2025 Guadalajara Oculta</p>
   </footer>
